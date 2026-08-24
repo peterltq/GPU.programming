@@ -1,0 +1,27 @@
+For this assignment, you will need to execute the following commands across all of the assignment parts:
+
+Driver API example code based on code found at https://gist.github.com/tautologico/2879581
+
+#FATBIN assignment part
+1. Ensure that you are in the project/driver_api folder
+2. Update the drivertest.cpp to use the matSumKernel.fatbin
+3. CREATE MISSING HEADER FILE: Create the file matSumKernel.h in the project/driver_api folder. This file must contain the function prototype (declarationfor   the matSumKernel and any shared constants.
+4. nvcc -o matSumKernel.fatbin -fatbin matSumKernel.cu -lcuda -I.
+5. nvcc -o drivertest.o -c drivertest.cpp -lcuda
+6. nvcc -o drivertest drivertest.o -lcuda
+7. ./drivertest > ~/project/output-fatbin.txt
+
+#PTX assignment part
+1. Update the drivertest.cpp to use the matSumKernel.ptx
+2. nvcc -o matSumKernel.ptx -ptx matSumKernel.cu -lcuda
+3. nvcc -o drivertest.o -c drivertest.cpp -lcuda
+4. nvcc -o drivertest drivertest.o -lcuda
+5. ./drivertest > ~/project/output-ptx.txt
+
+Runtime API example code based on code found at https://gist.github.com/al-indigo/4dd93d48a2886db6b1ac
+
+#Runtime assignment part
+
+1. Ensure that you are in the project/runtime_api folder
+2. nvcc -o vector_add vector_add.cu
+3. ./vector_add > ~/project/output-runtime.txt
