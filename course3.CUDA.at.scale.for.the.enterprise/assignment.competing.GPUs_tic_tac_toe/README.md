@@ -60,3 +60,11 @@ The board's memory pointer is accessible from both:
 - **Device scope (GPU)**
 
 This allows both the CPU threads and GPU kernels to access the same game board.
+
+## Demo
+
+[View Demo](https://drive.google.com/drive/folders/0B2DPaR7njC2_ZW9VQ3lBRXVNVG8?resourcekey=0-57Agf4wtuoSR_h734S00hQ)
+
+## Code Walkthrough
+
+[View Code Walkthrough](https://drive.google.com/drive/folders/0B2DPaR7njC2_ZW9VQ3lBRXVNVG8?resourcekey=0-57Agf4wtuoSR_h734S00hQ)
